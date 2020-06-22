@@ -1,18 +1,8 @@
-<p align="center">
-  <img src=images/frontpage3.jpg width=300 align=left>
-</p>
+
+<img src=images/frontpage3.jpg width=300>
 
 
 # IAS_model
-
-Table of Contents
-=================
-
-
-* [Summary](Summary)
-* [References](References)
-
-
 
 
 ## Summary 
