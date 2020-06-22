@@ -2,5 +2,5 @@ This folder contains all scripts. Below is the explanation of the various functi
 
 Summary of the scripts used to perform Ecological niche modelling for invasive species (by Gunnar Andersson, National Veterinary Institute, SVA, Sweden, gunnar.andersson@sva.se)
 
-<img src=images/IAS_image3.png width=500">
+<img src="images/IAS_image3.png" width=500">
 
