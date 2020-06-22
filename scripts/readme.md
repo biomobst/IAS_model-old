@@ -1,7 +1,7 @@
 
 Below is the explanation of the various functions and commands of the scripts used to perform Ecological niche modelling for invasive species (by Gunnar Andersson, National Veterinary Institute, SVA, Sweden, gunnar.andersson@sva.se)
 
-<img src="/images/IAS_image3.jpg" width=500>
+<img src="/images/IAS_image3.jpg" width=550>
 
 *Schematic representation of the file structure used by the script*
 
