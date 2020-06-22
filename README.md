@@ -4,9 +4,11 @@
 
 <img src=images/frontpage3.jpg width=400 align=right>
 
-This repo contains a workflow for running species distribution models for marine species in R and use it to identify potential distribution areas for alien / invasive species in Swedish waters. The repo also contain all input and putput data from the original experiments. 
+This repo contains a workflow for running species distribution models for marine species in R and use it to identify potential distribution hotspots areas for alien / invasive species in Swedish waters. The repo also contains all input and output data from the original experiments.
 
-This workflow can model a large number of known invasive species and thus makes it possible to summarize model results for many species and see overall patterns in the spatial distribution of areas with suitable habitat. The models analyze the correlation between environmental variables and species occurrences using a machine learning algorithm (Random Forest). Predictions are carried out with the same environmental variables as during the model building, a so-called "native projection". A more detailed explanation of the modeling and workflows can be found in the below papers.
+The IAS Hotspot Model is based on Species Distribution Models (SDM) embedded in a workflow that allows predicting suitable habitat for a large number of invasive species. These individual predictions are summarized and can subsequently be combined with external data layers on introduction vectors such as ship traffic density and oceanographic currents. The latter option however is not yet fully implemented. 
+
+SDMs are based on a machine learning algorithm (Random Forest) and analyze the correlation between environmental variables and species occurrences. Predictions are carried out with the same environmental variables as during the model building, a so-called "native projections". A more detailed account of the modeling theory can be found in the below papers.
 
 The workflow was built under the commission of the Swedish Agency for Marine and Water Management (SwAM)” and is formally part of the report **“Provtagningsdesign med omdrev för övervakning av främmande arter enligt eRAS”** by Marine Monitoring AB, Senalytics AB, and the Swedish National Veterinary Institute.
 
