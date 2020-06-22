@@ -1,4 +1,4 @@
-# IAS_model
+# IAS Hotspot Model
 
 ## Summary 
 
