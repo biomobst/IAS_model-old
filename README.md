@@ -5,6 +5,9 @@
 ## Summary 
 This repo contains a workflow for running species distribution models for marine species and identify potential distribution areas for alien / invasive species in Swedish waters. The workflow was built under the commission of the Swedish Agency for Marine and Water Management (SwAM)” and is formally part of the report **“Provtagningsdesign med omdrev för övervakning av främmande arter enligt eRAS”** by Marine Monitoring AB, Senalytics AB, and the Swedish National Veterinary Institute. 
 
+
+
+
 This workflow can model a large number of known invasive species and thus makes it possible to summarize model results for many species and see overall patterns in the spatial distribution of areas with suitable habitat. The models analyze the correlation between environmental variables and species occurrences using a machine learning algorithm (Random Forest). Predictions are carried out with the same environmental variables as during the model building, a so-called "native projection". A more detailed explanation of the modeling and workflows can be found in Leidenberger et al 2015 and Karlsson et al 2019.
 
 
