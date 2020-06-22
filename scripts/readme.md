@@ -41,7 +41,9 @@ This script performs all steps in the analysis, from extraction of data to prepa
 
 The analysis in performed in the following steps
 
-**read.and.extract**
+**read.and.extract** 
+
+Within script “SEanalytics.functions.r”
 
 Read in present absent and pseudoabsent points, convert these points to spatial coordinates and extract environmental variables from rasterstack
 
@@ -49,9 +51,13 @@ Data points with errors are deleted and the data table, with environmental varia
 
 **split.data**
 
+Within script “SEanalytics.functions.r”
+
 The cross validation scheme is prepared. M repetitions of a n-fld cross validation. The cross validation is prepared in such a way that observations from the same ICES-statistical rectangle will end up in the same set. This is a precaution to avoid overestimating the predictive performance
 
 **run.random.forests**
+
+Within script “SEanalytics.functions.r”
 
 The function “run random forests” is preparing the data and then the method is execuded in the sub-function RF-process. First the cross-validation experiments is preformed and predicted class probability for each observation is stored. (but not the modell). Finally a model is training with the full dataset and stored for future use. In this case class predictions for the training set are stored.
 n.b. The code contains some “artifacts” that are left from an earlier implementation using parallel processing. The result is stored as two .rda files. One with cross validation  results the other with the full model
@@ -59,9 +65,12 @@ n.b. The code contains some “artifacts” that are left from an earlier implem
 **Calculate ROC**
 
 Results are loaded from the cross validation results. The predicted class probability for each observation from the cross validation are sorted. FP TP FN and TN are calculated with different cutoffs. 
+
 One average ROC curve is computed with results from all repetition of the cross validation as well as individual curves for each repetition. The meaning of repeating the cross validation is to check that the performance estimate is stable,  and does not vary a lot depending on how the data is split. 
 
 **plot.maps**
+
+Within script “SEanalytics.functions.r”
 
 The rasterstack representing the area of interest is reloaded in memory. The function “plot maps” will run the random forests model on the raster. It returns the result as a raster with is then stored as an rda file. However, the function also makes some plots. The plots in the “plot maps” function could be inactivated to save time. However, it was useful to get the plots to see that the algorithm worked as intended.
 
