@@ -1,6 +1,6 @@
 # IAS_model
 
-<img src=images/frontpage3.jpg width=420 align=right>
+<img src=images/frontpage3.jpg width=450 align=right>
 
 ## Summary 
 
