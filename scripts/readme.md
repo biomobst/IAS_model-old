@@ -1,9 +1,9 @@
 
 Below is the explanation of the various functions and commands of the scripts used to perform Ecological niche modelling for invasive species (by Gunnar Andersson, National Veterinary Institute, SVA, Sweden, gunnar.andersson@sva.se)
 
-![Schematic representation of the file structure used by the script](https://github.com/biomobst/IAS_model/images/IAS_image3.jpg)
+<img src="https://github.com/biomobst/IAS_model/images/IAS_image3.jpg" width=500>
 *Schematic representation of the file structure used by the script*
-?raw=true
+
 
 ## The following files are included
 
