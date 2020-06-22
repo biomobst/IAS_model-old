@@ -21,8 +21,10 @@ The Global rasterstack will be used to extract environmental data for the traiin
 
 **extract.data.r**
 
+Within script "read.and.resample.raster.r"
+
 A test script to extract environmental data for one species from the stored stack.
- 
+
 **data.table.csv**
 
 This file contains information for each species on which files to include for presence, absence and pseudoabsence data
@@ -31,11 +33,11 @@ This file contains information for each species on which files to include for pr
 
 Contains information about classification of species. Information herein is used to prepare composite rasterlayers and identifying hotspots
 
-**#invasive.data.masterscript.r**
+**invasive.data.masterscript.r**
 
 The first version of the script. A simpler implementation without cross validation
 
-**#invasive.data.masterscript.with CV**
+**invasive.data.masterscript.with CV**
 
 This script performs all steps in the analysis, from extraction of data to preparation of plots. 
 
@@ -62,7 +64,9 @@ Within script “SEanalytics.functions.r”
 The function “run random forests” is preparing the data and then the method is execuded in the sub-function RF-process. First the cross-validation experiments is preformed and predicted class probability for each observation is stored. (but not the modell). Finally a model is training with the full dataset and stored for future use. In this case class predictions for the training set are stored.
 n.b. The code contains some “artifacts” that are left from an earlier implementation using parallel processing. The result is stored as two .rda files. One with cross validation  results the other with the full model
 
-**Calculate ROC**
+** ROC curve**
+
+Within script “SEanalytics.functions.r”
 
 Results are loaded from the cross validation results. The predicted class probability for each observation from the cross validation are sorted. FP TP FN and TN are calculated with different cutoffs. 
 
@@ -80,11 +84,15 @@ Maps ar plotted with linear probabilities and log10 probabilities. To avoid na´
 
 After transformation the predicted rasters are saved as geotiff rasters.
 
-**Combine.layers**
+**Combine layers**
+
+Within script "invasive.data.masterscript"
 
 A number of computations are preformed to combine results from several species. Information about what species belong to the same class (ecological or taxonomic) and their expected risk “samlat riskutfall” is read from a .csv file and stored in a table “combine.table”. The resulting combined layers are stored as geotiff.
 
 **Plot selected layers**
+
+Within script "invasive.data.masterscript.r"
 
 The combined layers, stored as geotiff, are read in and plotted as png files.  Some computatons are done to obtain a reasonable colorscale so that plots are comparable and that the color-legend at the side will get a nice appearance (without breaks are strange numbers.)
 
