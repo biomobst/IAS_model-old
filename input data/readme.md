@@ -1,1 +1,1 @@
-this folder contain the input data
+This folder contains the input data
