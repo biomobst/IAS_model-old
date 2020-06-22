@@ -64,7 +64,7 @@ Within script “SEanalytics.functions.r”
 The function “run random forests” is preparing the data and then the method is execuded in the sub-function RF-process. First the cross-validation experiments is preformed and predicted class probability for each observation is stored. (but not the modell). Finally a model is training with the full dataset and stored for future use. In this case class predictions for the training set are stored.
 n.b. The code contains some “artifacts” that are left from an earlier implementation using parallel processing. The result is stored as two .rda files. One with cross validation  results the other with the full model
 
-** ROC curve**
+**ROC curve**
 
 Within script “SEanalytics.functions.r”
 
