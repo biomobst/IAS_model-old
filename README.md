@@ -1,6 +1,5 @@
 <p align="center">
-  <img src=images/frontpage1.jpg width=300 align=left>
-</p>
+  <img src=images/frontpage2.jpg width=300 align=left>
 </p>
 
 
