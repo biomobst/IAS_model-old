@@ -3,7 +3,6 @@ Below is the explanation of the various functions and commands of the scripts us
 
 <img src=images/IAS_image3.png width=400>
 Schematic representation of the file structure used by the script
-</p>
 
 ## The following files are included
 
