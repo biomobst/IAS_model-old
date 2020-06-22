@@ -1,9 +1,6 @@
-
-<img src=images/frontpage3.jpg width=300>
-
-
 # IAS_model
 
+<img src=images/frontpage3.jpg width=300 align=left>
 
 ## Summary 
 This repo contains a workflow for running species distribution models for marine species and identify potential distribution areas for alien / invasive species in Swedish waters. The workflow was built under the commission of the Swedish Agency for Marine and Water Management (SwAM)” and is formally part of the report **“Provtagningsdesign med omdrev för övervakning av främmande arter enligt eRAS”** by Marine Monitoring AB, Senalytics AB, and the Swedish National Veterinary Institute. 
